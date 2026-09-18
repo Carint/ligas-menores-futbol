@@ -1,0 +1,22 @@
+{
+  "name": "Ligas Menores de Fútbol - Santa Rosa de Copán",
+  "short_name": "Ligas Menores SRC",
+  "description": "Resultados, fixture, tablas de posiciones y goleadores de las Ligas Menores de Fútbol de Santa Rosa de Copán",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf7f4",
+  "theme_color": "#dd7322",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icons/icon-192.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/icon-512.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ]
+}
