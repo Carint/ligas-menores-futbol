@@ -103,12 +103,12 @@ class App {
       this.render();
 
       if (forceRefresh) {
-        this.showToast('Datos sincronizados con Google Sheets', 'success');
+        this.showToast('Datos actualizados', 'success');
       }
     } catch (err) {
       console.error('Error cargando datos:', err);
       this.state.isLoading = false;
-      this.state.errorMessage = err.message || 'Error al conectar con Google Sheets';
+      this.state.errorMessage = err.message || 'Error al conectar';
       this.render();
     }
   }
@@ -146,7 +146,7 @@ class App {
 
     if (data.status === 'ERROR' || this.state.errorMessage) {
       mainContentHtml = renderErrorState(this.state.errorMessage || 'No se pudieron descargar los datos');
-    } 
+    }
     else {
       switch (activeTab) {
         case 'partidos':
@@ -198,9 +198,9 @@ class App {
       <div class="min-h-screen bg-stadium-bg text-slate-900 flex flex-col pb-safe">
         <!-- Barra Superior -->
         ${renderHeader({
-          isLoading,
-          lastUpdated: data.lastUpdated,
-        })}
+      isLoading,
+      lastUpdated: data.lastUpdated,
+    })}
 
         <!-- Selector Global de Categorías -->
         ${renderCategorySelector(data.categories, activeCategory)}

@@ -103,7 +103,7 @@ export function renderEmptyCategoryState(categoryName, tabTitle = 'partidos') {
       </div>
       <h4 class="text-sm font-bold text-slate-900 mb-1">Sin registros en ${categoryName}</h4>
       <p class="text-xs text-slate-500">
-        Aún no hay ${tabTitle} cargados en Google Sheets para esta categoría.
+        Aún no hay ${tabTitle} cargados para esta categoría.
       </p>
     </div>
   `;

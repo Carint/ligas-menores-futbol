@@ -45,8 +45,8 @@ export function renderHeader(state) {
           <!-- Botón Refrescar Datos -->
           <button 
             id="btn-refresh-data" 
-            title="Sincronizar con Google Sheets"
-            aria-label="Refrescar datos"
+            title="Actualizar datos"
+            aria-label="Actualizar datos"
             class="p-2 rounded-xl bg-white hover:bg-saddle-brown-50 active:scale-95 text-saddle-brown-700 border border-slate-200 shadow-sm transition-all flex items-center justify-center disabled:opacity-50"
             ${state.isLoading ? 'disabled' : ''}
           >
